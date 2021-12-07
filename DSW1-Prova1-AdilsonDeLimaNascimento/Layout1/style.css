@@ -1,0 +1,111 @@
+
+body{
+	margin: 0px;
+}
+
+
+.container{
+	display: grid;
+	grid-template-columns: 20% 20% 20% 20% 20%;
+	height: 550px;
+	color:white;
+	}
+
+.item1{
+	
+	background-color: navy;
+	display: flex;
+  	justify-content: center;
+  	align-items: center;
+  	animation: 1s ease-out 0s 1 left;
+
+}
+
+.item2{
+	background-color: teal;
+	display: flex;
+  	justify-content: center;
+  	align-items: center;
+  	animation: 1s ease-out 0s 1 up;
+}
+
+.item3{
+	background-color: purple;
+	display: flex;
+  	justify-content: center;
+  	align-items: center;
+  	animation: 1s ease-out 0s 1 down;
+}
+
+.item4{
+	background-color: olive;
+	display: flex;
+  	justify-content: center;
+  	align-items: center;
+  	animation: 1s ease-out 0s 1 up;
+}
+
+.item5{
+	background-color: red;
+	display: flex;
+  	justify-content: center;
+  	align-items: center;
+  	animation: 1s ease-out 0s 1 right;
+}
+
+@media only screen and (max-width: 760px){
+	.container{
+		display: block;
+	}
+	.item1{
+		height: 20%;
+	}
+	.item2{
+		height: 20%;
+	}
+	.item3{
+		height: 20%;
+	}
+	.item4{
+		height: 20%;
+	}
+	.item5{
+		height: 20%;
+	}
+}
+
+@keyframes left {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes down {
+	0%{
+		transform: translateY(-100%);
+	}
+	100%{
+		transform: translateY(0);
+	}
+}
+
+@keyframes up{
+	0%{
+		transform: translateY(200%);
+	}
+	100%{
+		transform: translateY(0);
+	}
+}
+
+@keyframes right{
+	0%{
+		transform: translateX(200%);
+	}
+	100%{
+		transform: translateX(0);
+	}
+}
